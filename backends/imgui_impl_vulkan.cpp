@@ -635,7 +635,7 @@ bool ImGui_ImplVulkan_CreateFontsTexture(VkCommandBuffer command_buffer)
     // Update the Descriptor Set:
 
     VkDescriptorSet font_descriptor_set =
-            (VkDescriptorSet)ImGui_ImplVulkan_AddTexture(bd->FontSampler, bd->FontView VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL);
+            (VkDescriptorSet)ImGui_ImplVulkan_AddTexture(bd->FontSampler, bd->FontView, VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL);
 
 
     // Create the Upload Buffer:
